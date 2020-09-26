@@ -1,10 +1,16 @@
-# Firmware dwm1001_localization_and_calibration
-Custom localization and calibration firmware for Decawave's DWM1001 Ultra-Wideband modules
+# Firmware for UWB localization and anchor autocalibration using Decawave's DWM1001-DEV board
+Custom localization and calibration firmware for Decawave's DWM1001 DEV ultra-wideband (UWB) development modules
 
 ## Installation
   1. Download Segger Embedded Studio (SES) version V3.34a (Note the version to ensure compatibility)
   2. Download Segger J-Flash Lite and GNU ARM Embedded Toolchain 5.4 2016q3
   3. Clone Decawave's code example from https://github.com/Decawave/dwm1001-examples.git
+
+SES has a free license for nrF52832 development. Consequently, this IDE can be used without any limitation for DWM1001 development.
+
+For more information regarding Segger Embedded Studio, please visit https://www.segger.com/products/development-tools/embedded-studio/
+
+For more information about free license for nrF52832, please read https://www.nordicsemi.com/News/News-releases/Product-Related-News/Nordic-Semiconductor-adds-Embedded-Studio-IDE-support-for-nRF51-and-nRF52-SoC-development
 
 ## How to program the devices
 
