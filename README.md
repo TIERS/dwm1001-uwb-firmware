@@ -17,18 +17,18 @@ For more information about free license for nrF52832, please read https://www.no
 Follow these steps to load the initiator and responder firmware on the DWM1001-DEV boards.
 
 ### Initiator
-1. Open the project inside dwm1001-examples/examples/ss_twr_init but replace the files ss_init_main.c and main.c with the ones of the same name provided in the folder Initiator (inside of the Autocalibration or Localization folder depending on your objective).
+1. Open the project inside `dwm1001-examples/examples/ss_twr_init` but replace the files `ss_init_main.c` and `main.c` with the ones of the same name provided in the folder Initiator (inside of the Autocalibration or Localization folder depending on your objective).
 
-2. Paste the file shared_var.h provided in this repository inside the folder dwm1001-examples/examples/ss_twr_init/SES/
+2. Paste the file shared_var.h provided in this repository inside the folder `dwm1001-examples/examples/ss_twr_init/SES/`
 
 3. Open the project in Segger, set the device ID to the desired value, connect the target device via USB and click Build and Run.
 
 ### Responders
-1. Copy the folder dwm1001-examples/examples/ss_twr_init and change the name to ss_twr_resp to identify it.
+1. Copy the folder `dwm1001-examples/examples/ss_twr_init` and change the name to `ss_twr_resp` to identify it.
 
-2. Replace the files ss_init_main.c and main.c with the ones of the same name provided in the folder Responder (inside of the Autocalibration or Localization folder depending on your objective).
+2. Replace the files `ss_init_main.c` and `main.c` with the ones of the same name provided in the folder Responder (inside of the Autocalibration or Localization folder depending on your objective).
 
-3. Paste the file shared_var.h provided in this repository inside the folder dwm1001-examples/examples/ss_twr_resp/SES/
+3. Paste the file `shared_var.h` provided in this repository inside the folder `dwm1001-examples/examples/ss_twr_resp/SES/`
 
 4. Open the project in Segger, set the device ID to the desired value, connect the target device via USB and click Build and Run.
 
