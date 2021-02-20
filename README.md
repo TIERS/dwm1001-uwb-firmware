@@ -23,6 +23,25 @@ Follow these steps to load the initiator and responder firmware on the DWM1001-D
 
 3. Open the project in Segger, set the device ID to the desired value, connect the target device via USB and click Build and Run.
 
+
+## KEIL µVision IDE
+
+Each example contains a µVision5 project file for Keil µVision IDE. The examples compile and load cleanly to the DWM1001.
+The project was created with the KEIL uVision version V5.24.2.0. 
+
+Keil µVision has a free license for project up to 32KB. For more information regarding Keil µVision, please visit http://www2.keil.com/mdk5/uvision/
+
+### µVision Error: Flash Download failed - "Cortex-M4"
+
+This error can be observed if there is a memory conflict between the binary to load and the current firmware on the target hardware. This issue can be easily fixed by fully erasing the target device 's flash memory. Keil µVision cannot perform a full erase and the following free tool can be used :
+
+* J-flash lite 
+* nrfjprog command line script
+
+For more information about the issue, please see :
+
+https://devzone.nordicsemi.com/f/nordic-q-a/18278/error-flash-download-failed---cortex---m4-while-flashing-softdevice-from-keil-uvision-5
+
 ### Responders
 1. Copy the folder `dwm1001-examples/examples/ss_twr_init` and change the name to `ss_twr_resp` to identify it.
 
