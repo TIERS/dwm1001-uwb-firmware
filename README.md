@@ -24,6 +24,17 @@ Follow these steps to load the initiator and responder firmware on the DWM1001-D
 3. Open the project in Segger, set the device ID to the desired value, connect the target device via USB and click Build and Run.
 
 
+### Responders
+1. Copy the folder `dwm1001-examples/examples/ss_twr_init` and change the name to `ss_twr_resp` to identify it.
+
+2. Replace the files `ss_init_main.c` and `main.c` with the ones of the same name provided in the folder Responder (inside of the Autocalibration or Localization folder depending on your objective).
+
+3. Paste the file `shared_var.h` provided in this repository inside the folder `dwm1001-examples/examples/ss_twr_resp/SES/`
+
+4. Open the project in Segger, set the device ID to the desired value, connect the target device via USB and click Build and Run.
+
+
+
 ## KEIL µVision IDE
 
 Each example contains a µVision5 project file for Keil µVision IDE. The examples compile and load cleanly to the DWM1001.
@@ -41,15 +52,6 @@ This error can be observed if there is a memory conflict between the binary to l
 For more information about the issue, please see :
 
 https://devzone.nordicsemi.com/f/nordic-q-a/18278/error-flash-download-failed---cortex---m4-while-flashing-softdevice-from-keil-uvision-5
-
-### Responders
-1. Copy the folder `dwm1001-examples/examples/ss_twr_init` and change the name to `ss_twr_resp` to identify it.
-
-2. Replace the files `ss_init_main.c` and `main.c` with the ones of the same name provided in the folder Responder (inside of the Autocalibration or Localization folder depending on your objective).
-
-3. Paste the file `shared_var.h` provided in this repository inside the folder `dwm1001-examples/examples/ss_twr_resp/SES/`
-
-4. Open the project in Segger, set the device ID to the desired value, connect the target device via USB and click Build and Run.
 
 
 ## Restore the factory firmware
