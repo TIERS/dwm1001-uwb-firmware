@@ -1,7 +1,10 @@
 # Firmware for UWB localization and anchor autocalibration using Decawave's DWM1001-DEV board
-Custom localization and calibration firmware for Decawave's DWM1001 DEV ultra-wideband (UWB) development modules
+Custom localization and calibration firmware for Decawave's DWM1001 DEV ultra-wideband (UWB) development modules.
 
 ## Installation
+
+**NOTE:** We recomment using Keil µVision IDE if SES version is not available any more.
+
   1. Download Segger Embedded Studio (SES) version V3.34a (Note the version to ensure compatibility)
   2. Download Segger J-Flash Lite and GNU ARM Embedded Toolchain 5.4 2016q3
   3. Clone Decawave's code example from https://github.com/Decawave/dwm1001-examples.git
